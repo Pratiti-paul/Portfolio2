@@ -14,20 +14,21 @@ import {
   SiGooglesheets,
   SiPandas,
   SiNumpy,
-  SiTableau,
   SiMysql,
   SiPostgresql,
   SiJupyter
 } from "react-icons/si";
 
+import { IoLogoTableau } from "react-icons/io5";
+
 const skills = [
   { name: "Excel", icon: <FaFileExcel /> },
   { name: "Google Sheets", icon: <SiGooglesheets /> },
-  { name: "SQL", icon: <FaDatabase /> },
+  // { name: "SQL", icon: <FaDatabase /> },
   { name: "Python", icon: <FaPython /> },
   { name: "Pandas", icon: <SiPandas /> },
   { name: "NumPy", icon: <SiNumpy /> },
-  { name: "Tableau", icon: <SiTableau /> },
+  { name: "Tableau", icon: <IoLogoTableau /> },
   { name: "Matplotlib", icon: <FaChartLine /> },
   { name: "Seaborn", icon: <FaChartBar /> },
   { name: "MySQL", icon: <SiMysql /> },

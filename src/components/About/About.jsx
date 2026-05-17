@@ -12,7 +12,7 @@ const About = () => {
         </h2>
         
         <p className="about-description reveal">
-          Data Analyst & Visualization Specialist turning complex datasets into actionable intelligence. I build scalable models and dashboards.
+          turning complex datasets into actionable intelligence. I build scalable models and dashboards.
         </p>
 
         <div className="about-buttons reveal">

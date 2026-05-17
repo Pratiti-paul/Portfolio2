@@ -65,3 +65,48 @@
     border-radius: 4px;
     color: var(--secondary-text);
 }
+
+.project-links {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+.link-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.6rem 1.2rem;
+    background: var(--accent-color);
+    color: white;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    border: 1px solid var(--accent-color);
+}
+
+.link-btn:hover {
+    background: transparent;
+    color: var(--accent-color);
+}
+
+.link-btn.outline {
+    background: transparent;
+    border-color: rgba(255, 255, 255, 0.2);
+    color: var(--text-color);
+}
+
+.link-btn.outline:hover {
+    background: rgba(255, 255, 255, 0.1);
+    border-color: rgba(255, 255, 255, 0.3);
+}
+
+.link-btn .arrow {
+    font-size: 1.1rem;
+    transition: transform 0.3s ease;
+}
+
+.link-btn:hover .arrow {
+    transform: translate(2px, -2px);
+}
