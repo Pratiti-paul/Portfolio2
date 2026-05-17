@@ -11,9 +11,9 @@ const Hero = () => {
           <span>PAUL</span>
         </h1>
         <p className="hero-subtitle">
-          I DESIGN AND BUILD PRODUCTS THAT
+          I TURN COMPLEX DATA INTO
           <br />
-          <span className="highlight">deliver real impact.</span>
+          <span className="highlight">meaningful business insights</span>
         </p>
         
         <div className="hero-glow"></div>

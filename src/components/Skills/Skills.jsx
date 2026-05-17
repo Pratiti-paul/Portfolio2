@@ -1,11 +1,39 @@
-import React from 'react';
-import './Skills.css';
+import React from "react";
+import "./Skills.css";
+
+import {
+  FaDatabase,
+  FaPython,
+  FaChartLine,
+  FaChartBar,
+  FaGithub,
+  FaFileExcel
+} from "react-icons/fa";
+
+import {
+  SiGooglesheets,
+  SiPandas,
+  SiNumpy,
+  SiTableau,
+  SiMysql,
+  SiPostgresql,
+  SiJupyter
+} from "react-icons/si";
 
 const skills = [
-  "ReactJS", "NextJS", "TypeScript", "Tailwind CSS", "Motion", "Sanity",
-  "Contentful", "NodeJS", "ExpressJS", "PostgreSQL", "MongoDB", "Prisma",
-  "Zustand", "Zod", "pnpm", "Bun", "Git", "GitHub", "Vercel",
-  "AWS", "Docker", "Expo", "Clerk", "Linux"
+  { name: "Excel", icon: <FaFileExcel /> },
+  { name: "Google Sheets", icon: <SiGooglesheets /> },
+  { name: "SQL", icon: <FaDatabase /> },
+  { name: "Python", icon: <FaPython /> },
+  { name: "Pandas", icon: <SiPandas /> },
+  { name: "NumPy", icon: <SiNumpy /> },
+  { name: "Tableau", icon: <SiTableau /> },
+  { name: "Matplotlib", icon: <FaChartLine /> },
+  { name: "Seaborn", icon: <FaChartBar /> },
+  { name: "MySQL", icon: <SiMysql /> },
+  { name: "PostgreSQL", icon: <SiPostgresql /> },
+  { name: "Git/GitHub", icon: <FaGithub /> },
+  { name: "Jupyter Notebook", icon: <SiJupyter /> },
 ];
 
 const Skills = () => {
@@ -17,10 +45,11 @@ const Skills = () => {
           The Magic <span className="highlight">Behind</span>
         </h2>
 
-        <div className="skills-grid">
+        <div className="skills-grid stagger-container">
           {skills.map((skill, index) => (
-            <div key={index} className="skill-item">
-              <span className="skill-name">{skill}</span>
+            <div key={index} className="skill-item stagger-item">
+              <div className="skill-icon">{skill.icon}</div>
+              <span className="skill-name">{skill.name}</span>
             </div>
           ))}
         </div>
